@@ -1,5 +1,11 @@
 import { useState } from "react";
 import RemoteLogo from "../../assets/images/RemoteLogo.png";
+import HeroSection from "../HeroSection";
+import FeaturesSection from "../FeatureSection";
+import ShowcaseTalentsSection from "../ShowcaseTalentsSection";
+import CallToActionSection from "../CallToActionSection";
+import CommonQuestions from "../CommonQuestions";
+import  { PricingAndFooterSection } from "../PricingAndFooterSection";
 
 const MainLayout = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -158,6 +164,13 @@ const MainLayout = () => {
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap');
       `}</style>
+
+      <HeroSection />
+      <FeaturesSection />
+      <ShowcaseTalentsSection />
+      <CallToActionSection />
+      <CommonQuestions />
+      <PricingAndFooterSection />
     </div>
   );
 };
